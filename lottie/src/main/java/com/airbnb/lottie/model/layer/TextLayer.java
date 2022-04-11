@@ -290,7 +290,7 @@ public class TextLayer extends BaseLayer {
       canvas.save();
 
       // Apply horizontal justification
-      applyJustificationWithSafeSpace(Justification.RIGHT_ALIGN, canvas, textLineWidth, safeSpace);
+      applyJustificationWithSafeSpace(documentData.justification, canvas, textLineWidth, safeSpace);
 
       // Center text vertically
       float translateY = l * lineHeight;
